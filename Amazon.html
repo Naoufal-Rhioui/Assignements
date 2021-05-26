@@ -1,0 +1,77 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon Sing-In</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      input[type="text"],
+      select,
+      textarea {
+        border: 1px solid black;
+        width: 100%;
+        padding: 6px;
+        margin-bottom: 16px;
+        margin-top: 8px;
+      }
+      input[type="continue"] {
+        background-color: rgb(238, 195, 115);
+        text-align: center;
+        width: 100%;
+        border: 1px solid grey;
+        padding: 6px;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        width: 400px;
+        height: 300px;
+        border: 1px solid rgb(216, 212, 212);
+        padding: 10px;
+        font-size: 12;
+      }
+      .link a {
+        font-size: 12;
+        color: rgb(106, 120, 241);
+        text-decoration: none;
+      }
+      .password a {
+        font-size: 12;
+        color: rgb(106, 120, 241);
+        text-decoration: none;
+        float: right;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h2 style="font-size: 22; font-style: ">Sign In</h2>
+
+      <form action="/sign_in_page.php">
+        <div>
+          <label for="username">Email(phone or mobile accounts)</label>
+          <input type="text" id="username" placeholder="Enter Email" />
+        </div>
+        <div>
+          <label for="password"> Password</label>
+          <div class="password">
+            <a href="https://www.google.com">Forgot Password</a>
+          </div>
+          <input type="text" id="password" placeholder="Enter Password" />
+        </div>
+
+        <div><input type="continue" value="Continue" /></div>
+      </form>
+      <div class="link"><a href="https://www.google.com">. Need Help?</a></div>
+    </div>
+  </body>
+</html>
