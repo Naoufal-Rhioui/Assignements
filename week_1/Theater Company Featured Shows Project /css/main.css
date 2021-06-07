@@ -1,0 +1,116 @@
+a:-webkit-any-link {
+  color: white;
+  text-decoration: none;
+  margin: 0.5cm;
+}
+.container {
+  display: grid;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  align-items: center;
+  text-align: center;
+  grid-auto-rows: auto;
+  background: black;
+}
+
+.navbar-text {
+  grid-column: 1;
+  color: white;
+  font-size: 20px;
+}
+
+.navbar-links {
+  grid-column: 2;
+  align-items: center;
+}
+
+.header {
+  display: grid;
+  color: white;
+  background-image: url(../images/theater-image-background.png);
+  height: 600px;
+  text-align: center;
+  align-items: center;
+  font-size: 40px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.tickets-container {
+  display: grid;
+  margin: auto;
+  width: 70%;
+
+  margin-top: 2cm;
+}
+
+.month-year {
+  display: grid;
+  background-color: rgb(235, 235, 235);
+  font-size: 12px;
+  font-style: normal;
+  height: 30px;
+
+  align-items: center;
+  align-content: center;
+  border: 1px solid rgb(223, 218, 218);
+
+  margin-bottom: 0.5cm;
+  padding-left: 30px;
+}
+
+.ticket-container {
+  display: grid;
+  grid-template-columns: 35% 45% 20%;
+  margin-top: 35px;
+  border-bottom: 1px solid rgb(202, 196, 196);
+  padding-bottom: 15px;
+  padding-left: 10px;
+}
+
+img {
+  width: max-content;
+  height: 180px;
+}
+
+.read-more-button {
+  margin-top: 30%;
+  padding-left: 55%;
+}
+
+.read-more-button button {
+  display: grid;
+  background-color: rgb(231, 186, 102);
+  width: 100px;
+  height: 40px;
+  align-items: center;
+  color: white;
+  border: 1px solid rgb(179, 177, 177);
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: black;
+  color: white;
+  height: 10cm;
+  padding-top: 5%;
+  margin-top: 20px;
+}
+
+.map-image {
+  display: grid;
+  padding: 5%;
+}
+.info {
+  display: grid;
+}
+.shows {
+  display: grid;
+}
+.social {
+  display: grid;
+}
