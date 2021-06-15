@@ -1,0 +1,76 @@
+--Question_1:  How many actors are there with the last name ‘Wahlberg’?
+--Answer: 2
+SELECT COUNT(last_name)
+FROM actor
+WHERE last_name = 'Wahlberg'
+
+--Question_2: How many payments were made between $3.99 and $5.99?
+--Answer: 3431
+SELECT COUNT(amount)
+FROM payment
+WHERE amount > 3.99 AND amount < 5.99
+
+--Question_3: What film does the store have the most of? (search in inventory)
+--Answer: Several films have the highest amount of copies (8 copies each)
+SELECT film_id, COUNT(film_id) as cnt
+FROM inventory
+GROUP BY film_id
+ORDER BY cnt DESC
+
+--Question_4: How many customers have the last name ‘William’?
+--Answer: None
+SELECT last_name
+FROM customer
+WHERE last_name LIKE 'William'
+
+--Question_5: What store employee (get the id) sold the most rentals?
+--Answer: staff_id #1
+SELECT staff_id, COUNT(staff_id)
+FROM rental
+GROUP BY staff_id
+
+--Question_6: How many different district names are there?
+--Answer: 378
+SELECT COUNT(DISTINCT district)
+FROM address
+
+--Question_7: What film has the most actors in it? (use film_actor table and get film_id)
+--Answer: film_id # 508
+SELECT film_id, COUNT(film_id) as f_id
+FROM film_actor
+GROUP BY film_id
+ORDER BY f_id DESC
+
+--Question_8: From store_id 1, how many customers have a last name ending with ‘es’? (use customer table)
+--Answer:13
+SELECT COUNT(last_name)
+FROM customer
+WHERE store_id = 1 AND last_name LIKE '%es'
+
+
+--Question_9: How many payment amounts (4.99, 5.99, etc.) had a number of rentals above 250 for customers
+--            with ids between 380 and 430? (use group by and having > 250)
+--Answer:2.99 - 4.99 - 0.99
+SELECT COUNT(rental_id) , amount
+FROM payment
+where customer_id between 380 and 430
+GROUP BY amount HAVING COUNT(rental_id) > 250
+
+--Question_10: Within the film table, how many rating categories are there? And what rating has the most
+--             movies total?
+--Answer_part_1: 5
+SELECT COUNT(DISTINCT rating)
+FROM film
+--Answer_part_2: NC-17
+SELECT rating, COUNT(rating)
+FROM film
+GROUP BY rating
+ORDER BY rating DESC
+
+
+
+
+
+
+
+
