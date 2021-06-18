@@ -1,0 +1,11 @@
+ALTER TABLE customer
+RENAME COLUMN type TO type_;
+
+ALTER TABLE staff
+RENAME COLUMN role TO role_;
+
+ALTER TABLE staff
+ALTER COLUMN first_name TYPE VARCHAR(100);
+
+ALTER TABLE staff
+ALTER COLUMN last_name TYPE VARCHAR(100);
