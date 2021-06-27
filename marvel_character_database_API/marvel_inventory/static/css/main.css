@@ -1,0 +1,183 @@
+
+
+/* Start of Nav Styles */
+
+.marvel-nav{
+    display: flex;
+    justify-content: space-between;    
+}
+
+.marvel-nav img{
+    width: 30%;
+    max-width: 70%;
+    margin-left: 2vw;
+    margin-top: 1vh;
+}
+
+ul#horizontal-list{
+    min-width: 696px;
+    list-style: none;
+    padding-top: 20px;
+}
+
+ul#horizontal-list li, ul#horizontal-list a{
+    display: inline;
+    text-decoration: none;
+    padding: 0.5vw;
+    border-radius: 11px;
+    margin: 0.3vw;
+}
+
+a#nav{
+    color: white;
+    border: 2px solid black;
+    background-color: black;
+}
+
+a#nav:hover{
+    background-color: white;
+    color: black;
+}
+
+ul#horizontal-list a:nth-last-child(1){
+    border: 2px solid #ed1d24;
+    background-color: #ed1d24;
+    border-radius: 11px;
+    margin: 0.2vw;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+ul#horizontal-list a:hover:nth-last-child(1){
+    color: black;
+    border: 2px solid black;
+    background-color:steelblue;
+}
+
+/* End of Nav Styles */
+
+#header-text{
+    margin-top: 4vh;
+    padding: 2vw;
+    justify-content: right;
+    align-content: center;
+}
+
+#header-text>h2{
+    justify-items: center;
+}
+
+
+.bgimage {
+    width:103%;
+    height:700px;
+    background: url(../images/avengers-wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    background-attachment: fixed;
+    color:white;
+    text-shadow:1px 1px black;
+    font-size: 9px;
+    align-content: stretch;
+}
+
+/* Start of Middle Section Styles */
+#middle-section{
+    margin-top: 10vh;
+}
+
+#middle-text{
+    text-align: justify;
+    padding-top: 12vh;
+    padding-bottom: 8vh;
+    padding-left: 2vw;
+    padding-right: 4vw;
+}
+
+#middle-text h3{
+    padding: 1vw;
+}
+
+#middle-image{
+    padding-top: 2vh;
+}
+
+/* Start of Features Section Styles */
+#api-image,#graphql-image,#database-image{
+    margin-bottom: 8vh;
+    justify-content: space-evenly;
+}
+
+#graphql-image{
+    width: 70%;
+}
+
+#database-image{
+    width: 57%;
+}
+
+#features-section{
+    margin: 6vw;
+    text-align: center;
+}
+
+/* Community Section Styles */
+#marvel-image{
+    width: 50%;
+    max-width: 75%;
+    margin-left: 3vw;
+}
+
+/* Footer Section Styles */
+.footer-text-flex{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vw;
+}
+
+#footer-logo{
+    margin-top: 5vh;
+    width: 100%;
+    max-width: 100%;
+}
+
+#footer{
+    border-top:3px solid black;
+    margin-top: 10vh;
+}
+
+/* Sign Up Page */
+#signuppage{
+    margin-top: 3vh;
+}
+
+img#signupimage{
+    padding-top: 4vh;
+    align-content: center;
+    text-align: center;
+    width: 70%;
+    height: 60%;
+}
+
+#signinpage{
+    margin-top: 3vh;
+}
+
+img#signinimage{
+    padding-top: 4vh;
+    align-content: center;
+    
+    text-align: center;
+    width: 70%;
+    height: 50%;
+}
+
+#profile{
+    margin-top: 3vh;
+}
+
+img#profile-wallpaper{
+    width: 80%;
+    height: 50%;
+}

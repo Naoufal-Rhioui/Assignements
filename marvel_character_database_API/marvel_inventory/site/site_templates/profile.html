@@ -1,0 +1,24 @@
+{% extends 'base.html' %} 
+
+{% block content %} 
+
+    <header class="hero-section">
+        <h3 class="header-text"></h3>
+    </header>
+
+    <!--Profile Info section-->
+    <div class="container" id="profile">
+        <h3>Here are your profile details: {{ current_user.email }}</h3>
+
+        <ul class="list-group">
+            <li class="list-group-item">Email: {{ current_user.email }}</li>
+            <li class="list-group-item">Token: {{ current_user.token }}</li>
+        </ul>
+    </div>
+
+    <div class="container" >
+        <div class="col-12" align="center">
+            <img src="../../static/images/profile-wallpaper.jpg" alt="profile-wallpaper" id="profile-wallpaper">
+        </div>
+    </div>
+{% endblock content %} 

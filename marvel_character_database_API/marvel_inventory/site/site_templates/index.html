@@ -1,0 +1,156 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!--Flask Flashed Message to User-->
+<div class="container">
+    {% with messages = get_flashed_messages(with_categories = true) %} <!--Create a group of messages (if we have them) place them within messages(variable) and we're able to use this inside of our html(similar to python)-->
+        {% if messages %}
+            {% for cat,msg in messages %}
+                {% if cat == 'user-created' %}
+                    <div class="alert alert-success">
+                        {{ msg }}
+                        <button type="button" class = 'close' data-dismiss = 'alert'>&times;</button>
+                    </div>
+
+                {% elif cat == 'auth-success' %}
+                    <div class="alert-alert-success">
+                        {{ msg }}
+                        <button type="button" class = 'close' data-dismiss = 'alert'>&times;</button>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+</div>
+
+
+<div class="container">
+    <!--Start of Header Section-->
+
+    <section class="bgimage">
+            <div class="row">
+                <div class="col-12 col-md-12" id="header-text">
+                    <h2>Take a look at our extensive Marvel Character Inventory!</h2>
+                    <h5>Sign up today!</h5>
+                    <p id="exclusion">*We may or may not freely use your data</p>
+                    <h6>Let's explore the world of Marvel together!</h6>
+                    <div>
+                        <button class="btn btn-primary">Start Here</button>
+                        <button class="btn btn-primary">Join Our Slack</button>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+        <!--Start of Middle Section-->
+    <section class="row" id="middle-section">
+        <div class="col-12 col-md-6" id="middle-text">
+            <h3>Do whatever you want, your way.</h3>
+            <p>
+                Display your amazing inventory with ease! Our MarvelAPI allows for <br>
+                quick and powerful integrations for all of your needs, whether globally
+                or within smaller teams. Join a large community of Marvel fans today!
+            </p>
+        </div>
+        <div class="col-12 col-md-6" id="middle-image">
+            <img src="../../static/images/community.jpg" alt="worldwide">
+        </div>
+    </section>
+
+    <!--Collection of Features Section-->
+    <section class="row" id="features-section">
+        <div class="col-12 col-md-4">
+            <img src="../../static/images/api-logo.jpg" alt="API Image" id="api-image">
+            <h4>Dedicated API Routes</h4>
+            <p>Traditional API routes!</p>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <img src="../../static/images/graphql-image.png" alt="GraphQL-image" id="graphql-image">
+            <h4>GraphQL API Route</h4>
+            <p></p>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <img src="../../static/images/database-image.png" alt="database-image" id="database-image">
+            <h4>PostgreSQL Database</h4>
+            <p>All data stored in a PostgreSQL Database!</p>
+        </div>
+    </section>
+
+    <section class="row" id="community">
+        <div class="col-12 col-md-6">
+            <img src="../../static/images/marvel-image.jpg" alt="marvel-image" id="marvel-image">
+        </div>
+        <div class="col-12 col-md-6">
+            <h4>Talk to other Marvel fans today!</h4>
+            <div>
+                <button class="btn btn-primary">View On Github</button>
+                <button class="btn btn-primary">Join Our Slack Channel</button>
+            </div>
+        </div>
+    </section>
+    
+    <!--Start of Footer Section-->
+    <footer class="row" id="footer">
+        <div class="col-2 col-md-2">
+            <img src="../../static/images/marvel-logo.png" alt="Marvel-logo" id="footer-logo">
+        </div>
+
+        <div class="col-2 col-md-2">
+            <div class="footer-text-flex">
+                <h4>Platform</h4>
+                <p>About Us</p>
+                <p>Contact Us</p>
+                <p>Follow Us</p>
+                
+            </div>
+        </div>
+
+        <div class="col-2 col-md-2">
+            <div class="footer-text-flex">
+                <h4>Platform</h4>
+                <p>About Us</p>
+                <p>Contact Us</p>
+                <p>Follow Us</p>
+                
+            </div>
+        </div>
+
+        <div class="col-2 col-md-2">
+            <div class="footer-text-flex">
+                <h4>Platform</h4>
+                <p>About Us</p>
+                <p>Contact Us</p>
+                <p>Follow Us</p>
+                
+            </div>
+        </div>
+
+        <div class="col-2 col-md-2">
+            <div class="footer-text-flex">
+                <h4>Platform</h4>
+                <p>About Us</p>
+                <p>Contact Us</p>
+                <p>Follow Us</p>
+                
+            </div>
+        </div>
+
+        <div class="col-2 col-md-2">
+            <div class="footer-text-flex">
+                <h4>Platform</h4>
+                <p>About Us</p>
+                <p>Contact Us</p>
+                <p>Follow Us</p>
+                
+            </div>
+        </div>
+
+        
+    </footer>
+
+</div>
+
+{% endblock content %}
