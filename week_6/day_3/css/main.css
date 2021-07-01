@@ -1,0 +1,29 @@
+.color-change {
+  color: whitesmoke;
+  text-align: center;
+}
+
+table {
+  font-family: arial, sans-serif;
+  width: 100%;
+  margin-top: 40px;
+}
+
+table,
+td {
+  border: 3px solid navy;
+  text-align: left;
+  padding: 9px;
+  background-color: rgb(212, 201, 178);
+}
+
+label {
+  color: whitesmoke;
+}
+
+body {
+  background-image: url(../static/mclaren-720s-gt3-1549636513.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
